@@ -25,7 +25,7 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6" style="margin-top: 120px;">
                         <h1>Welcome to the Insight App</h1>
                         <p>Your platform for data analysis and insights.</p>
                         <a href="{{ url_for('get_signup_page') }}" class="cta-button btn btn-success">Get Started</a>
@@ -36,41 +36,57 @@
                 </div>
             </div>
         </section>
-        
-        <section class="features">
+        <section class="hero">
             <div class="container">
-                <h2>Key Features</h2>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="/static/img/i3.jpg" alt="Data Analysis" class="custom-img-fluid">
+
+                    </div>
+                    <div class="col-lg-6"style="margin-top: 150px;">
+                        <h2 style="font-family: 'Arial', sans-serif; color: #333; font-size: 2.5rem; font-weight: bold;">Unlock the Power of Data Analytics</h2>
+                        <p style="font-family: 'Arial', sans-serif; color: #555; font-size: 1.2rem; line-height: 1.5;">Experience the future of data-driven decision-making with the Insight App. Our platform empowers you with state-of-the-art data analytics tools and cutting-edge visualizations, allowing you to extract valuable insights from your data effortlessly.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="features" style="background-color: #fff; padding: 60px 0;">
+            <div class="container">
+                <h2 class="text-center mb-4">Key Features</h2>
                 <div class="row">
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card text-center mb-4 feature-card">
                             <div class="card-body">
                                 <i class="fas fa-chart-line fa-3x mb-3"></i>
-                                <h5 class="card-title">Data Analysis</h5>
-                                <p class="card-text">Powerful tools for in-depth data analysis.</p>
+                                <h5 class="card-title">Powerful Data Analysis</h5>
+                                <p class="card-text">Uncover deep insights with our advanced data analysis tools.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card text-center mb-4 feature-card">
                             <div class="card-body">
                                 <i class="fas fa-chart-bar fa-3x mb-3"></i>
-                                <h5 class="card-title">Data Visualization</h5>
-                                <p class="card-text">Create stunning visualizations of your data.</p>
+                                <h5 class="card-title">Stunning Data Visualization</h5>
+                                <p class="card-text">Transform your data into captivating visualizations.</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="card">
+                        <div class="card text-center mb-4 feature-card">
                             <div class="card-body">
                                 <i class="fas fa-share-alt fa-3x mb-3"></i>
                                 <h5 class="card-title">Collaborative Sharing</h5>
-                                <p class="card-text">Share insights and collaborate with your team.</p>
+                                <p class="card-text">Effortlessly share insights and collaborate with your team.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <section class="productivity">
             <div class="container">

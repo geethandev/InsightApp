@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async function() {
             // Clear the token from localStorage
             localStorage.removeItem("token");
             // Redirect to the login page
-            window.location.href = "/login"; // Update with your login page URL
+            window.location.href = "/"; // Update with your login page URL
         });
 
         // Fetch and set the user's avatar image
