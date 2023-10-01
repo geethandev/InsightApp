@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (response.status === 200) {
                 const data = await response.json();
-                const token = data.access_token;
+                const token = data.token;
 
                 // Store the token in localStorage
                 localStorage.setItem("token", token);
