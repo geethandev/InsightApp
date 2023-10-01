@@ -22,9 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
             if (response.status === 200) {
                 const data = await response.json();
-                const token = data.token;
-
-                // Store the token in localStorage
+                const token = data.token; // Extract the token from the response
                 localStorage.setItem("token", token);
 
                 // Redirect to the dashboard

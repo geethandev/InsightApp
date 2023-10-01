@@ -37,7 +37,7 @@ async def get_dashboard_user_avatar(current_user: int = Depends(auth.get_current
     try:
         user = db.query(models.User).filter(models.User.id == current_user).first()
         if not user or not user.avatar:
-            return {"message": "User or avatar not found"}, 404
+            return {"message": "User or avatar not found"}
 
         return StreamingResponse(BytesIO(user.avatar), media_type="image/png")
     except JWTError:

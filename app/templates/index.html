@@ -1,37 +1,53 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Insight App</title>
+    <title>
+        Insight App
+    </title>
+    <link rel="icon" href="/static/img/icon.png" type="image/png">
     <link rel="stylesheet" href="{{ url_for('static', path='styles/index.css') }}">
     <!-- Include Bootstrap CSS from a CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   
+
+
 </head>
 <body>
     <header>
-        <div class="brand">
-            <h2>Insight App</h2>
-        </div>
         <nav>
-            <ul>
-                <li><a href="{{ url_for('get_signup_page') }}">Sign Up</a></li>
+            <div class="menu">
+              <div class="logo">
+                <a href="#">
+                    <img src="/static/img/icon.png" alt="Insight App Icon"> <!-- Add your desired icon here -->
+                    Insight App</a>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <!-- <li><a href="#">About</a></li> -->
+                <!-- <li><a href="#">Services</a></li> -->
                 <li><a href="{{ url_for('get_login_page') }}">Login</a></li>
-            </ul>
-        </nav>
+                <li><a href="{{ url_for('get_signup_page') }}">Signup</a></li>
+              </ul>
+            </div>
+          </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero fullscreen-hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6" style="margin-top: 120px;">
-                        <h1>Welcome to the Insight App</h1>
-                        <p>Your platform for data analysis and insights.</p>
-                        <a href="{{ url_for('get_signup_page') }}" class="cta-button btn btn-success">Get Started</a>
-                    </div>
-                    <div class="col-lg-6">
-                        <img src="/static/img/i11.jpg" alt="Data Analysis" class="img-fluid">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div>
+                            <h1>Welcome to the Insight App</h1>
+                            <p>Your platform for data analysis and insights.</p>
+                            <a href="{{ url_for('get_signup_page') }}" class="cta-button btn btn-success custom-button">Get Started</a>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,17 +56,30 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <img src="/static/img/i3.jpg" alt="Data Analysis" class="custom-img-fluid">
-
+                        <img src="/static/img/r.jpg" alt="Data Analysis" class="custom-img-fluid">
                     </div>
                     <div class="col-lg-6"style="margin-top: 150px;">
-                        <h2 style="font-family: 'Arial', sans-serif; color: #333; font-size: 2.5rem; font-weight: bold;">Unlock the Power of Data Analytics</h2>
-                        <p style="font-family: 'Arial', sans-serif; color: #555; font-size: 1.2rem; line-height: 1.5;">Experience the future of data-driven decision-making with the Insight App. Our platform empowers you with state-of-the-art data analytics tools and cutting-edge visualizations, allowing you to extract valuable insights from your data effortlessly.</p>
-                        
+                        <h2>Unlock the Power of Data Analytics</h2>
+                        <p>Experience the future of data-driven decision-making with the Insight App. Our platform empowers you with state-of-the-art data analytics tools and cutting-edge visualizations, allowing you to extract valuable insights from your data effortlessly.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section class="hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-lg-2">
+                        <img src="/static/img/3.svg" alt="Data Analysis" class="custom-img-fluid float-right">
+                    </div>
+                    <div class="col-lg-6" style="margin-top: 150px;">
+                        <h2 class="section">Unlock the Power of Data Analytics</h2>
+                        <p class="section">Experience the future of data-driven decision-making with the Insight App. Our platform empowers you with state-of-the-art data analytics tools and cutting-edge visualizations, allowing you to extract valuable insights from your data effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+              
         
         <section class="features" style="background-color: #fff; padding: 60px 0;">
             <div class="container">
@@ -86,28 +115,46 @@
                 </div>
             </div>
         </section>
-        
 
         <section class="productivity">
             <div class="container">
-                <div class="productivity-content">
-                    <h2>Unlock Your Data's Potential</h2>
-                    <p>Make data-driven decisions, visualize insights, and collaborate effectively with the Insight App. Join us today!</p>
-                    <a href="{{ url_for('get_signup_page') }}" class="cta-button btn btn-success">Sign Up Now</a>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="productivity-content">
+                            <h2>Unlock Your Data's Potential</h2>
+                            <p>Make data-driven decisions, visualize insights, and collaborate effectively with the Insight App. Join us today!</p>
+                            <a href="{{ url_for('get_signup_page') }}" class="cta-button btn btn-success">Sign Up Now</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+       
     </main>
-    <footer>
-        <div class="footer-content">
-            <p class="footer-text">&copy; 2023</p>
-            <p class="footer-text">MIT License</p>
-            <p class="footer-text">Developed with ❤️ by Developer</p>
-        </div>
+
+    <footer class="flex">
+        <section class="flex_content padding_2x">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-youtube"></i></a>
+        </section>
+        <section class="flex_content">
+            <a href="#">Home</a>
+            <a href="#">Contact us</a>
+            <a href="#">About us</a>
+            <a href="#">Cookie Policy</a>
+        </section>
+        <section class="flex_content padding_1x">
+            <p>© 2023 website name || All rights reserved</p>
+        </section>
     </footer>
 
     <!-- Include Bootstrap JS and Popper.js from a CDN -->
+    <!--PLUGIN-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
 </body>
 </html>
+ 

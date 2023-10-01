@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", async function() {
     // Get the user's token from localStorage
     const token = localStorage.getItem("token");
+    // console.log(token)
     if (!token) {
         // Handle the case where there's no token (user not logged in)
         console.error("User not logged in.");
@@ -56,3 +57,4 @@ document.addEventListener("DOMContentLoaded", async function() {
         });
     }
 });
+

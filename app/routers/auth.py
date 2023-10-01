@@ -91,6 +91,7 @@ def login(user_credentials:OAuth2PasswordRequestForm = Depends(), db: Session = 
 
         
         token = Access_Token(data={"user_id": user.id})
+        # print(token)
         
         return {"token": token, "token_type": "Bearer"}
 
